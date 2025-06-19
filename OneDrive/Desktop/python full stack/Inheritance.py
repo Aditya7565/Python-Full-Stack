@@ -61,18 +61,40 @@
 # from Person that adds an attribute roll_number. Create an object of Student 
 # and display all its details
 
-class Person:
-    def __init__(self,name,age):
-        self.name=name
-        self.age=age
-class Student(Person):
-    def __init__(self, name, age,roll):
-        super().__init__(name, age)
-        self.roll=roll
-    def details(self):
-        print("Details of the Student: ")
-        print(f"Name of the student is : {self.name}")
-        print(f"Student age is : {self.age}")
-        print(f"Roll no : {self.roll}")
-obj1=Student("Krishna",22,1)
-obj1.details()
+# class Person:
+#     def __init__(self,name,age):
+#         self.name=name
+#         self.age=age
+# class Student(Person):
+#     def __init__(self, name, age,roll):
+#         super().__init__(name, age)
+#         self.roll=roll
+#     def details(self):
+#         print("Details of the Student ")
+#         print(f"Name of the student is : {self.name}")
+#         print(f"Student age is : {self.age}")
+#         print(f"Roll no : {self.roll}")
+# obj1=Student("Krishna",22,1)
+# obj1.details()
+
+
+
+
+
+            # MULTIPLE INHERITANCE
+
+
+class A:
+    def method_a(self):
+        print("Methoa a")
+
+class B:
+    def method_b(self):
+        print("Methoa B")
+
+class C(A,B):
+    def method_c(self):
+        print("Methoa C")
+        
+test_obj=C()
+test_obj.method_c()
