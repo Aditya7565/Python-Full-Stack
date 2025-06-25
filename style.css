@@ -1,0 +1,31 @@
+span{
+    color: brown;
+}
+.p_tag{
+    color: red;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+#id2{
+    text-align: center;
+    
+   
+    text-decoration: dashed;
+    text-wrap:inherit;
+    background-color: aliceblue;
+}
+div {
+    color: yellow;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid grey;
+    width: 200px;
+    text-align: center;
+
+}
+span {
+    background-color: beige;
+    display: block;
+}
