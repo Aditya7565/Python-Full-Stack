@@ -5,6 +5,9 @@
     border: 2px solid red;
     margin: 20px;
     padding: 10px;
+   display: flex;
+    
+    
    
     
     
@@ -16,7 +19,7 @@
     background-color: blue;
     border:2px solid black;
     margin: 20px 0px 10px 300px;
-    padding:20x;
+    padding:20px;
     
     
     
@@ -25,23 +28,34 @@
 #container1{
     background-color: brown;
     text-align: center;
-   line-height: 50px;
+   
+   /* position: fixed; */
+   
     
 }
 #container2{
     background-color: aquamarine;
     text-align: center;
-    line-height: 50px;
+
+    margin-top: 10px;
+    position: relative;
     
 }
 #container3{
     background-color: chartreuse;
     text-align: center;
-    line-height: 50px;
+   
+    position: fixed;
     
 }
 #container4{
    background-color: blue;
    text-align:center;
-   line-height: 50px;
+
+   position: sticky;
+}
+#abc{
+    height: 8000px;
+    background-color: pink;
+    position: sticky;
 }
