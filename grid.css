@@ -1,0 +1,44 @@
+.layout-grid {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "menu main adi"
+    "ad2  main adi"
+    "footer footer footer";
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto 1fr 1fr auto;
+  gap: 10px;
+  height: 80vh;
+  padding: 10px;
+  background-color: rgb(174, 41, 41);
+}
+
+/* Grid area mapping by ID */
+#box1 
+{ 
+    grid-area: header;
+     background: #3f51b5; 
+     font-size: 50px;
+     /* justify-content: right; */
+     align-items:end;
+
+    }
+#box2 { grid-area: menu;   background: #009688; }
+#box3 { grid-area: main;   background: #673ab7; }
+#box4 { grid-area: adi;    background: #e91e63; }
+#box5 { grid-area: ad2;    background: #795548; }
+#box6 {
+     grid-area: footer; 
+     background: #607d8b;
+    font-size: 50px; }
+
+/* Optional: Style all boxes */
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 6px;
+}
