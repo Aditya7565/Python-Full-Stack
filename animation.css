@@ -1,66 +1,93 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, #0a0020, #000);
+  overflow: hidden;
 }
 
-body {
-    height: 100vh;
-    width: 100vw;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: radial-gradient(circle, #2b2b2b, #000);
-    color: white;
+.universe {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }
 
-.container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Magic Balls */
+.magic-ball {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: floatRandom 10s ease-in-out infinite alternate;
+  box-shadow: 0 0 20px #ffffff55, 0 0 40px #ff00ff;
+  background: radial-gradient(circle, #ffffffaa, #aa00ff33);
+  z-index: 2;
 }
 
-.animation_element {
-    height: 180px;
-    width: 180px;
-    background-color: #5a00a3;
-    color: white;
-    border: 4px solid #ffffffaa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 1rem;
-    border-radius: 50%;
-    animation: magicPulse 4s ease-in-out infinite;
-    padding: 1rem;
-    box-shadow: 0 0 25px #ff66ff, 0 0 40px #cc00cc;
+/* Delay for randomness */
+.ball1 { animation-delay: 0s; }
+.ball2 { animation-delay: 2s; }
+.ball3 { animation-delay: 4s; }
+.ball4 { animation-delay: 1s; }
+.ball5 { animation-delay: 3s; }
+.ball6 { animation-delay: 5s; }
+
+/* Random-ish path that stays above the brick */
+@keyframes floatRandom {
+  0% {
+    top: 10%;
+    left: 5%;
+    transform: scale(1) rotate(0deg);
+  }
+  20% {
+    top: 30%;
+    left: 80%;
+    transform: scale(1.2) rotate(45deg);
+  }
+  40% {
+    top: 60%;
+    left: 60%;
+    transform: scale(0.9) rotate(-30deg);
+  }
+  60% {
+    top: 70%;
+    left: 10%;
+    transform: scale(1.1) rotate(60deg);
+  }
+  80% {
+    top: 75%;
+    left: 70%;
+    transform: scale(1) rotate(-45deg);
+  }
+  100% {
+    top: 73%;
+    left: 50%;
+    transform: scale(1) rotate(360deg);
+  }
 }
 
-@keyframes magicPulse {
-    0% {
-        transform: scale(1) rotate(0deg);
-        background-color: #5a00a3;
-        box-shadow: 0 0 25px #ff66ff, 0 0 40px #cc00cc;
-    }
-    25% {
-        transform: scale(1.1) rotate(90deg);
-        background-color: #8e24aa;
-        box-shadow: 0 0 30px #ffaaff, 0 0 50px #e040fb;
-    }
-    50% {
-        transform: scale(1.2) rotate(180deg);
-        background-color: #ba68c8;
-        box-shadow: 0 0 40px #ffe6ff, 0 0 60px #ce93d8;
-    }
-    75% {
-        transform: scale(1.1) rotate(270deg);
-        background-color: #8e24aa;
-        box-shadow: 0 0 30px #ffaaff, 0 0 50px #e040fb;
-    }
-    100% {
-        transform: scale(1) rotate(360deg);
-        background-color: #5a00a3;
-        box-shadow: 0 0 25px #ff66ff, 0 0 40px #cc00cc;
-    }
+/* Brick Floor */
+.brick-floor {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background: 
+    repeating-linear-gradient(
+      -45deg,
+      #8B0000,
+      #8B0000 20px,
+      #a52a2a 20px,
+      #a52a2a 40px
+    );
+  border-top: 4px solid #661010;
+  z-index: 1;
 }
