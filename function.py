@@ -182,3 +182,24 @@
 
 
   
+  
+  
+  
+  
+  
+  
+  
+  
+# def remove_duplicates_by_id(data):
+    
+
+# data = []
+# n = int(input("Enter number of entries: "))
+# for i in range(n):
+#     print(f"\nEntry {i+1}")
+#     id_val = int(input("Enter ID: "))
+#     name_val = input("Enter Name: ")
+#     data.append({"id": id_val, "name": name_val})
+
+# print("\nOriginal Data:")
+# print(data)

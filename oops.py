@@ -129,21 +129,29 @@
 # filter_movies(movies, genre) that takes list of movie objects and prints only
 # the movies of the given genre.
     
-class Movie:
-    def __init__(self, name, rating, genre):
-        self.name = name
-        self.rating = rating
-        self.genre = genre
+# class Movie:
+#     def __init__(self, name, rating, genre):
+#         self.name = name
+#         self.rating = rating
+#         self.genre = genre
 
-def filter_movies(movies, genre):
-    for movie in movies:
-        if movie.genre.lower() == genre.lower():
-            print(movie.name, movie.rating)
+# def filter_movies(movies, genre):
+#     for movie in movies:
+#         if movie.genre.lower() == genre.lower():
+#             print(movie.name, movie.rating)
 
-movies = [
-    Movie("Inception", 8.8, "Sci-Fi"),
-    Movie("The Lion", 4.4, "Action"),
-    Movie("The Rise", 6.6, "Comedy")
-]
+# movies = [
+#     Movie("Inception", 8.8, "Sci-Fi"),
+#     Movie("The Lion", 4.4, "Action"),
+#     Movie("The Rise", 6.6, "Comedy")
+# ]
 
-filter_movies(movies, "Comedy")
+# filter_movies(movies, "Comedy")
+
+
+
+
+
+  
+
+

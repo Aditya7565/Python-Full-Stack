@@ -1,0 +1,3 @@
+Name: Adi, Subject: math, Marks: 99
+Name: Suresh, Subject: Physic, Marks: 77
+Name: mahesh, Subject: Bio, Marks: 23
