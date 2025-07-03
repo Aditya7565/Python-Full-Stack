@@ -41,6 +41,26 @@
 
 
 
-const filterEven=numbers=>numbers.filter(num=>num%2==0);
-console.log(filterEven([1,2,3,4,5,6]))
+// const filterEven=numbers=>numbers.filter(num=>num%2==0);
+// console.log(filterEven([1,2,3,4,5,6]))
 
+
+// const number=[1,2,3,4,5];
+// const double=number.map(num=>num*2);
+// console.log(double)
+// const evens=number.filter(num=>num%2===0);
+// console.log(even)
+
+
+
+
+
+const number=[1,2,3,4,5];
+s=[]
+// const double=number.forEach(num=>num*2);
+// console.log(double)
+number.forEach(num => {
+  s.push(num * 2);
+});
+console.log(s)
+ 

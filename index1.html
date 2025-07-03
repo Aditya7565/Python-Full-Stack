@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="main-heading">Welcome</h1>
+    <p id="para1" class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi repudiandae minus amet blanditiis? Sit ipsam dolor ut, aperiam non mollitia officia porro doloribus voluptates vitae numquam! Optio alias fugiat quis rerum accusantium. Rerum facere sequi aliquid velit saepe in at iusto, quaerat facilis modi repudiandae, atque minima assumenda neque.</p>  
+    <button>click me!</button>  
+</body>
+ <script>
+  const heading = document.getElementById("main-heading");
+  const button = document.querySelector("button");
+
+  button.addEventListener("click", () => {
+    heading.textContent = "Hello, JavaScript!";
+  });
+</script>
+</html>

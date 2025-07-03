@@ -1,0 +1,94 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced To-Do List</title>
+  <link rel="stylesheet" href="TodoList.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="todo-app">
+      <h1>📝 Advanced To-Do List</h1>
+
+      <div class="controls">
+        <label>Priority:
+          <select id="priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+        </label>
+        <label>Due Date:
+          <input type="date" id="dueDate" />
+        </label>
+      </div>
+
+      <div class="input-group">
+        <input type="text" id="taskInput" placeholder="Enter a task..." />
+        <button onclick="addTask()">Add</button>
+        <button onclick="markAllDone()">Mark All Done</button>
+        <button onclick="deleteCompleted()">Delete Completed</button>
+        <button onclick="toggleDarkMode()">🌓</button>
+      </div>
+
+      <div class="filters">
+        <button onclick="filterTasks('all')">All</button>
+        <button onclick="filterTasks('completed')">Completed</button>
+        <button onclick="filterTasks('pending')">Pending</button>
+      </div>
+
+      <div class="sort-search">
+        <input type="text" id="searchInput" placeholder="Search tasks..." oninput="searchTasks()" />
+        <button onclick="sortByDate()">Sort by Due Date</button>
+        <button onclick="sortByPriority()">Sort by Priority</button>
+      </div>
+
+      <div class="progress-container">
+        <div id="progressBar"></div>
+      </div>
+
+      <ul id="taskList"></ul>
+    </div>
+  </div>
+
+  <script src="TodoList.js"></script>
+</body> 
+</html>
+  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple To-Do List</title>
+  <link rel="stylesheet" href="TodoList.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Enter a task..." />
+      <button onclick="addTask()">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="TodoList.js"></script>
+</body>
+</html>
